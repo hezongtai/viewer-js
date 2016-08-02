@@ -1,0 +1,93 @@
+{
+  "frames": {
+    "10001.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 100
+      },
+      "spriteSourceSize": {
+        "x": 248,
+        "y": 311,
+        "w": 156,
+        "h": 100
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    },
+    "30001.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 156,
+        "y": 0,
+        "w": 97,
+        "h": 118
+      },
+      "spriteSourceSize": {
+        "x": 234,
+        "y": 306,
+        "w": 97,
+        "h": 118
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    },
+    "30000.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 253,
+        "y": 0,
+        "w": 129,
+        "h": 152
+      },
+      "spriteSourceSize": {
+        "x": 281,
+        "y": 250,
+        "w": 129,
+        "h": 152
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    },
+    "10000.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 382,
+        "y": 0,
+        "w": 114,
+        "h": 152
+      },
+      "spriteSourceSize": {
+        "x": 255,
+        "y": 229,
+        "w": 114,
+        "h": 152
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    }
+  },
+  "meta": {
+    "image": "spear_damage.png",
+    "format": "RGB888",
+    "size": {
+      "w": 512,
+      "h": 256
+    },
+    "scale": 1
+  }
+}

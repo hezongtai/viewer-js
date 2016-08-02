@@ -1,0 +1,53 @@
+{
+  "frames": {
+    "10000.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 43,
+        "h": 176
+      },
+      "spriteSourceSize": {
+        "x": 329,
+        "y": 196,
+        "w": 43,
+        "h": 176
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    },
+    "30000.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 43,
+        "y": 0,
+        "w": 48,
+        "h": 186
+      },
+      "spriteSourceSize": {
+        "x": 296,
+        "y": 218,
+        "w": 48,
+        "h": 186
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    }
+  },
+  "meta": {
+    "image": "sword_defence.png",
+    "format": "RGB888",
+    "size": {
+      "w": 128,
+      "h": 256
+    },
+    "scale": 1
+  }
+}

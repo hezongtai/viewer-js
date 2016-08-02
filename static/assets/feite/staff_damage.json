@@ -1,0 +1,93 @@
+{
+  "frames": {
+    "10001.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 161,
+        "h": 98
+      },
+      "spriteSourceSize": {
+        "x": 221,
+        "y": 319,
+        "w": 161,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    },
+    "30001.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 161,
+        "y": 0,
+        "w": 88,
+        "h": 111
+      },
+      "spriteSourceSize": {
+        "x": 226,
+        "y": 299,
+        "w": 88,
+        "h": 111
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    },
+    "10000.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 249,
+        "y": 0,
+        "w": 116,
+        "h": 146
+      },
+      "spriteSourceSize": {
+        "x": 271,
+        "y": 244,
+        "w": 116,
+        "h": 146
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    },
+    "30000.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 365,
+        "y": 0,
+        "w": 125,
+        "h": 147
+      },
+      "spriteSourceSize": {
+        "x": 263,
+        "y": 264,
+        "w": 125,
+        "h": 147
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    }
+  },
+  "meta": {
+    "image": "staff_damage.png",
+    "format": "RGB888",
+    "size": {
+      "w": 512,
+      "h": 256
+    },
+    "scale": 1
+  }
+}

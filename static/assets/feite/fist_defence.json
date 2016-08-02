@@ -1,0 +1,53 @@
+{
+  "frames": {
+    "10000.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 47,
+        "h": 105
+      },
+      "spriteSourceSize": {
+        "x": 301,
+        "y": 257,
+        "w": 47,
+        "h": 105
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    },
+    "30000.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 47,
+        "y": 0,
+        "w": 33,
+        "h": 117
+      },
+      "spriteSourceSize": {
+        "x": 316,
+        "y": 273,
+        "w": 33,
+        "h": 117
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    }
+  },
+  "meta": {
+    "image": "fist_defence.png",
+    "format": "RGB888",
+    "size": {
+      "w": 128,
+      "h": 128
+    },
+    "scale": 1
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "frames": {
+    "10001.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 173,
+        "h": 110
+      },
+      "spriteSourceSize": {
+        "x": 225,
+        "y": 308,
+        "w": 173,
+        "h": 110
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    },
+    "30001.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 173,
+        "y": 0,
+        "w": 104,
+        "h": 123
+      },
+      "spriteSourceSize": {
+        "x": 224,
+        "y": 298,
+        "w": 104,
+        "h": 123
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    },
+    "30000.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 277,
+        "y": 0,
+        "w": 149,
+        "h": 157
+      },
+      "spriteSourceSize": {
+        "x": 263,
+        "y": 253,
+        "w": 149,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    },
+    "10000.png": {
+      "rotated": false,
+      "trimmed": true,
+      "frame": {
+        "x": 426,
+        "y": 0,
+        "w": 124,
+        "h": 157
+      },
+      "spriteSourceSize": {
+        "x": 261,
+        "y": 233,
+        "w": 124,
+        "h": 157
+      },
+      "sourceSize": {
+        "w": 615,
+        "h": 615
+      }
+    }
+  },
+  "meta": {
+    "image": "axe_damage.png",
+    "format": "RGB888",
+    "size": {
+      "w": 1024,
+      "h": 256
+    },
+    "scale": 1
+  }
+}
