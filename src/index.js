@@ -1,36 +1,29 @@
 'use strict'
 
-import glslify from 'glslify'
+import asprite from './asprite'
 
 const renderer = new PIXI.WebGLRenderer($(window).width(), $(window).height())
 renderer.backgroundColor = 0xC0C0C0
+
 $('#content').append(renderer.view)
 
 const stage = new PIXI.Container()
 
-class PlayerSprite extends PIXI.Sprite {
-  constructor(texture, mask) {
-    super(texture)
-    this.maskTexture = mask
-  }
+const animator = new asprite.SpriteSheetAnimator('body_run', './assets/sprites/feite/body_run.json', 5)
 
-  _renderWebGL(renderer) {
-    console.log('render this', renderer)
-    super._renderWebGL(renderer)
-  }
+const sp = new asprite.SpriteSheet()
+stage.addChild(sp)
+
+renderer.on('prerender', () => {
+})
+
+animate()
+const delay = 1000 / 20
+
+function animate() {
+  animator.update(delay)
+  sp.setAnimationFrame(animator.getCurrentFrame(), animator.mask)
+
+  renderer.render(stage)
+  requestAnimationFrame(animate)
 }
-
-PIXI.loader
-  .add('config', './assets/feite/body_run.json') // load spritesheet config
-  .add('base', './assets/feite/body_run.png') // load base texture
-  .add('mask', './assets/feite/body_run_a.png') // load mask texture
-  .load((loader, resources) => {
-    const config = resources.config.data
-    const f = config.frames['40000.png'].frame
-
-    const base = new PlayerSprite(resources.base.texture)
-    stage.addChild(base)
-
-    renderer.render(stage)
-  })
-

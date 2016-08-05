@@ -27,7 +27,9 @@
     "rules": {
       "curly": 0,
       "keyword-spacing": 0,
-      "guard-for-in": 0
+      "guard-for-in": 0,
+      "xo/filename-case": 0,
+      "max-params": ["error", 5]
     },
     "space": 2,
     "semicolon": false,
