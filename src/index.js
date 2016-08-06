@@ -1,6 +1,6 @@
 'use strict'
 
-import asprite from './asprite'
+import Player from './player/Player'
 
 const renderer = new PIXI.WebGLRenderer($(window).width(), $(window).height())
 renderer.backgroundColor = 0xC0C0C0
@@ -9,21 +9,20 @@ $('#content').append(renderer.view)
 
 const stage = new PIXI.Container()
 
-const animator = new asprite.SpriteSheetAnimator('body_run', './assets/sprites/feite/body_run.json', 5)
+const player = new Player()
 
-const sp = new asprite.SpriteSheet()
-stage.addChild(sp)
+player.x = $(window).width() * 0.5
+player.y = $(window).height() * 0.5
 
-renderer.on('prerender', () => {
-})
+player.play('feite', 'run', 'sword')
+
+stage.addChild(player)
 
 animate()
-const delay = 1000 / 20
 
 function animate() {
-  animator.update(delay)
-  sp.setAnimationFrame(animator.getCurrentFrame(), animator.mask)
-
+  player.update()
   renderer.render(stage)
   requestAnimationFrame(animate)
 }
+

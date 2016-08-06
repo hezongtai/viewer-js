@@ -1,6 +1,6 @@
 'use strict'
 import SpriteSheet from './SpriteSheet'
 import SpriteSheetRenderer from './SpriteSheetRenderer'
-import SpriteSheetAnimator from './SpriteSheetAnimator'
+import SpriteSheetAnimation from './SpriteSheetAnimation'
 
-export default {SpriteSheet, SpriteSheetRenderer, SpriteSheetAnimator}
+export default {SpriteSheet, SpriteSheetRenderer, SpriteSheetAnimation}

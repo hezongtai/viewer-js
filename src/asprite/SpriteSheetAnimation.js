@@ -1,7 +1,9 @@
 'use strict'
 
-export default class SpriteSheetAnimator {
+export default class SpriteSheetAnimation {
   constructor(name, url, directions) {
+    this.directions = directions
+
     PIXI.loader
       .add(name, url)
       .load((loader, resources) => {
@@ -46,8 +48,9 @@ export default class SpriteSheetAnimator {
     }
   }
 
-  getCurrentFrame() {
+  getFrame(direction) {
     if(!this.isReady) return
+    this.currentDirectionIndex = direction
     return this.frames[this.currentDirectionIndex][this.currentFrameIndex]
   }
 }
