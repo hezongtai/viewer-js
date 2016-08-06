@@ -2,8 +2,6 @@
 
 export default class SpriteSheetAnimation {
   constructor(name, url, directions) {
-    this.directions = directions
-
     PIXI.loader
       .add(name, url)
       .load((loader, resources) => {
@@ -11,61 +9,41 @@ export default class SpriteSheetAnimation {
         this.frames = getFrames(baseURL, resources[name].data, directions)
         const maskURL = /(.+)(.json)$/.exec(url)[1] + '_a.png'
         this.mask = PIXI.Texture.fromImage(maskURL)
+        this.isReady = true
       })
 
-    this.init()
-  }
-
-  init() {
     this.isReady = false
-    this.currentFrameIndex = 0
-    this.currentDirectionIndex = 0
-
-    this.fps = 20
-
-    this._now = 0
-    this._delta = 0
-    this._then = Date.now()
   }
 
-  update(delay) {
-    if(this.frames && this.mask) {
-      this.isReady = true
-    }else{
-      return
-    }
-
-    this._now = Date.now()
-    this._delta = this._now - this._then
-
-    if(this._delta < delay) return
-    this._then = this._now - (this._delta % delay)
-
-    if(this.currentFrameIndex + 1 < this.frames[this.currentDirectionIndex].length) {
-      this.currentFrameIndex += 1
-    }else{
-      this.currentFrameIndex = 0
-    }
+  getDirectionsNum() {
+    if(!this.isReady) return 0
+    return this.frames.length
   }
 
-  getFrame(direction) {
+  getFramesNum() {
+    if(!this.isReady) return 0
+    if(this.frames.length === 0) return 0
+    return this.frames[0].length
+  }
+
+  getFrame(direction, frame) {
     if(!this.isReady) return
-    this.currentDirectionIndex = direction
-    return this.frames[this.currentDirectionIndex][this.currentFrameIndex]
+    return this.frames[direction][frame]
   }
 }
 
-function getFrames(baseURL, frameData, type) {
-  const frameNum = frameData.meta.totalFrames / type
+function getFrames(baseURL, frameData, dirs) {
+  const frameNum = frameData.meta.totalFrames / dirs.length
   const imageURL = frameData.meta.image
+
   const bTexture = PIXI.BaseTexture.fromImage(`${baseURL}/${imageURL}`)
   const textures = []
 
-  for(let i = 0; i < type; i++) {
-    const frameNames = generateFrameNames(0, frameNum - 1, i, '.png', 4)
+  for(let i = 0; i < dirs.length; i++) {
+    const frameNames = generateFrameNames(0, frameNum - 1, dirs[i], '.png', 4)
 
     const f = []
-    for(let i = 0; i < frameNames.length - 1; i++) {
+    for(let i = 0; i < frameNames.length; i++) {
       const frame = frameData.frames[frameNames[i]]
       const size = new PIXI.Rectangle(
           frame.frame.x,

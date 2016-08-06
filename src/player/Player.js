@@ -25,16 +25,13 @@ export default class Player extends PIXI.Container {
     this.addChild(this._body)
     this.addChild(this._weapon)
 
-    this._animController = new AnimationController(this)
-  }
-
-  play(character, move, weapon) {
-    this._animController.setAnimation(character, move, weapon)
+    this.animation = new AnimationController(this)
   }
 
   /**
    * update animations & draw the frames
    */
   update() {
+    this.animation.update()
   }
 }

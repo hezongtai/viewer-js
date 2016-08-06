@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "glslify": "^5.1.0",
+    "hammerjs": "^2.0.8",
     "pixi.js": "^3.0.11"
   },
   "xo": {
@@ -29,7 +30,10 @@
       "keyword-spacing": 0,
       "guard-for-in": 0,
       "xo/filename-case": 0,
-      "max-params": ["error", 5]
+      "max-params": [
+        "error",
+        5
+      ]
     },
     "space": 2,
     "semicolon": false,
