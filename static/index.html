@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/simple-sidebar.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -24,7 +23,7 @@
 
         <!-- Add your site or application content here -->
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -39,29 +38,29 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			  <ul class="nav navbar-nav">
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select a character: <span class="caret"></span></a>
+			  <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown" style="float:left;width:50%;text-align:center">
+				  <a id="character" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">菲特<span class="caret"></span></a>
 				  <ul class="dropdown-menu">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Separated link</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">One more separated link</a></li>
+					<li style="text-align:center"><a href="#" value="feite" class="character_name">菲特</a></li>
+					<li style="text-align:center"><a href="#" value="kazi" class="character_name">卡兹</a></li>
+					<li style="text-align:center"><a href="#" value="li" class="character_name">丽</a></li>
+					<li style="text-align:center"><a href="#" value="lingnv" class="character_name">绫女</a></li>
+					<li style="text-align:center"><a href="#" value="shala" class="character_name">莎拉</a></li>
+					<li style="text-align:center"><a href="#" value="wulu" class="character_name">乌璐</a></li>
+					<li style="text-align:center"><a href="#" value="xiedi" class="character_name">谢堤</a></li>
+					<li style="text-align:center"><a href="#" value="xin" class="character_name">辛</a></li>
 				  </ul>
 				</li>
-			  </ul>
-			  <ul class="nav navbar-nav">
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select a weapon: <span class="caret"></span></a>
+				<li class="dropdown" style="float:right;width:50%;text-align:center">
+				  <a id="weapon" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">剑<span class="caret"></span></a>
 				  <ul class="dropdown-menu">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Separated link</a></li>
+					<li style="text-align:center"><a href="#" value="sword" class="weapon_name">剑</a></li>
+					<li style="text-align:center"><a href="#" value="spear" class="weapon_name">矛</a></li>
+					<li style="text-align:center"><a href="#" value="axe" class="weapon_name">斧</a></li>
+					<li style="text-align:center"><a href="#" value="bow" class="weapon_name">弓</a></li>
+					<li style="text-align:center"><a href="#" value="staff" class="weapon_name">杖</a></li>
+					<li style="text-align:center"><a href="#" value="fist" class="weapon_name">拳</a></li>
 				  </ul>
 				</li>
 			  </ul>

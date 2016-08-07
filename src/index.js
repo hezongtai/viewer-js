@@ -80,3 +80,22 @@ mc.on('tap', () => {
   player.animation.rewind()
 })
 
+$('a.character_name').click(function () {
+  const name = $(this).text()
+  const value = $(this).attr('value')
+
+  $('#character').html(`${name}<span class="caret">`)
+  currentCharacterName = value
+
+  player.animation.setAnimation(currentCharacterName, Fixer.getAction().name, currentWeapon, Fixer.getAction().dirs, Fixer.getAction().loop)
+})
+
+$('a.weapon_name').click(function () {
+  const name = $(this).text()
+  const value = $(this).attr('value')
+
+  $('#weapon').html(`${name}<span class="caret">`)
+  currentWeapon = value
+
+  player.animation.setAnimation(currentCharacterName, Fixer.getAction().name, currentWeapon, Fixer.getAction().dirs, Fixer.getAction().loop)
+})
