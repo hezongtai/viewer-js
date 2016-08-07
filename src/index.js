@@ -55,7 +55,6 @@ mc.on('swiperight', nextDir)
 
 function nextDir() {
   const pad = Fixer.nextDir()
-  console.log(pad)
   player.animation.setDirection(pad.index)
   player.scale.x = pad.flipped ? -1 : 1
 }
