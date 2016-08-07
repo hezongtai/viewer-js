@@ -98,3 +98,11 @@ $('a.weapon_name').click(function () {
 
   player.animation.setAnimation(currentCharacterName, Fixer.getAction().name, currentWeapon, Fixer.getAction().dirs, Fixer.getAction().loop)
 })
+
+// handle resize
+function resize() {
+  renderer.resize(window.innerWidth, window.innerHeight)
+  player.x = $(window).width() * 0.5
+  player.y = $(window).height() * 0.5
+}
+window.onresize = resize
